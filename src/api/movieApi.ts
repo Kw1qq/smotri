@@ -1,7 +1,7 @@
 import type { movieFullType } from "@/types/movieFullType"
 import type { MovieType } from "@/types/movieType"
 
-const URL = "https://smotri.vercel.app"
+const URL = "https://smotri-drab.vercel.app"
 
 export const movieApi = {
   getMovies: async (index: number): Promise<MovieType[]> => {
