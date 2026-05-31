@@ -1,0 +1,43 @@
+.page {
+  padding-block: 20px;
+}
+
+.text {
+  max-width: 1000px;
+  padding-block: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0;
+  padding-block: 20px;
+  margin: 0;
+}
+
+.listItem {
+  max-width: 400px;
+  list-style: none;
+}
+
+.title {
+  padding-block: 5px;
+  text-align: center;
+}
+
+.address {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  font-style: normal;
+  color: var(--color-dark-gray);
+  gap: 10px;
+}
+
+@media (width < 860px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,81 @@
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  width: fit-content;
+
+  &:not(:has(.line)) {
+    padding-bottom: 4px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+  outline-offset: 4px;
+
+  transition: all 0.2s ease;
+
+  &.withLine,
+  &.semiBold,
+  &.bold {
+    font-weight: 900;
+    font-size: clamp(18px, 16.48px + 0.392vw, 24px);
+  }
+
+  &.stroke {
+    font-size: inherit;
+    font-weight: 400;
+
+    &.active {
+      opacity: 0.5;
+    }
+  }
+
+  &.semiBold {
+    font-weight: 600;
+
+    &:focus-visible {
+      transform: none;
+    }
+  }
+
+  &.button {
+    font-size: clamp(14px, 13.17px + 0.219vw, 18px);
+
+    display: block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+
+    &.active {
+      color: var(--color-white);
+      background-color: var(--color-black);
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px dashed currentColor;
+    transform: scale(1.1);
+  }
+}
+
+@media (width < 400px) {
+  &.button {
+    padding: 5px 10px;
+  }
+}
+
+.line {
+  background-color: var(--color-accent);
+  height: 2px;
+  width: 100%;
+  align-self: center;
+}

@@ -1,0 +1,14 @@
+.socialList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.listItem {
+  list-style: none;
+}
+
+.link {
+  display: flex;
+}

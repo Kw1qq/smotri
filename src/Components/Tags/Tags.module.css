@@ -1,0 +1,15 @@
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--color-gray);
+  list-style: none;
+}

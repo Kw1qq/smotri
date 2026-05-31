@@ -1,0 +1,98 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #E5E5E5;
+  --color-dark-gray: #626262;
+  --color-accent: #FF4242;
+  --color-yellow: #FFD900;
+  --color-orange: #FF6A00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: clamp(14px, 13.17px + 0.219vw, 18px);
+}
+
+button,
+label,
+a {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  user-select: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: clamp(22px, 21.17px + 0.219vw, 28px);
+}
+
+h2 {
+  font-size: clamp(18px, 16.48px + 0.392vw, 24px);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
