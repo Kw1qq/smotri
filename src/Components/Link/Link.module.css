@@ -28,7 +28,7 @@
     font-weight: 400;
 
     &.active {
-      opacity: 0.5;
+      color: var(--color-dark-gray)
     }
   }
 
